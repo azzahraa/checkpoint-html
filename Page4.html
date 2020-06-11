@@ -1,41 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-        <ul>
-         <label for="contact"><h3><b>Contact Us</b></h3></label>
-          <form>
-           <li><label for="company name/full name"><b style="text-align: left;">Company Name/Full Name</b></label>
-             <input type="text" id="company name/full name" placeholder="fill in name"/> 
-             <br></li>
-          </form>
-          <form>
-            <li><label for="email"><b style="text-align: left;">Email</b></label>
-             <input type="email" id="email" placeholder="em@il"/><br></li>
-          </form>
-          <form action="/contact_page.php" method="GET">
-                <li><label><b style="text-align: left;">Required Task(s):</b></label><br></li>
-                 <input type="checkbox" id="Task1" name="script"/>
-                 <label for="Task1"><i style="text-align: left;">Script</i></label>
-                 <input type="checkbox" id="Task2" name="Editing" value="Editing">
-                 <label for="Task2"><i style="text-align: left;">Editing</i></label>
-                 <input type="checkbox" id="Task3" name="Coloring" value="Coloring">
-                 <label for="Task3"><i style="text-align: left;">Coloring</i></label>
-          </form>
-          <form><input type="submit"/></form>
-          <form> <input type="reset"/></form>
-        </ul>
-</body>
-<footer>
-    <ul>
-        <li id="Page1"><a href="Page1.html"><h4 style="text-align: center;">Home</h4></a></li>
-        <li id="Page2"><a href="Page2.html"><h4 style="text-align: center;">Work</h4></a></li>
-        <li id="Page3"><a href="Page3.html"><h4 style="text-align: center;">Resume</h4></a></li>
-        <li id="Page4"><a href="Page4.html"><h4 style="text-align: center ;">Contact</h4></a></li>
-     </ul>
-</footer>
+  </head>
+  <body>
+    <header>Recreational Portfolio Contact</header>
+      <ul>
+        <li id="Page0"><a href="index.html"><h4 style="text-align: center;">Main Page</h4></a></li>
+        <li id="Page1">
+          <a href="Page1.html"><h4 style="text-align: center;">Home</h4></a>
+        </li>
+        <li id="Page2">
+          <a href="Page2.html"><h4 style="text-align: center;">Work</h4></a>
+        </li>
+        <li id="Page3">
+          <a href="Page3.html"><h4 style="text-align: center;">Resume</h4></a>
+        </li>
+        <li id="Page4">
+          <a href="Page4.html"><h4 style="text-align: center;">Contact</h4></a>
+        </li>
+      </ul>
+    
+      <h3>Contact Us</h3>
+    <form>
+      <label for="company name/full name">
+        <b style="text-align: left;">Company Name/Full Name</b>
+      </label>
+      <input
+        type="text"
+        id="company name/full name"
+        placeholder="fill in name"
+      />
+      <br />
+
+      <label for="email"><b style="text-align: left;">Email</b></label>
+      <input type="email" id="email" placeholder="em@il" required/><br />
+
+      <li>
+        <label><b style="text-align: left;">Required Task(s):</b></label
+        ><br />
+      </li>
+      <input type="checkbox" id="Task1" name="script" />
+      <label for="Task1"><i style="text-align: left;">Script</i></label>
+      <input type="checkbox" id="Task2" name="Editing" value="Editing" />
+      <label for="Task2"><i style="text-align: left;">Editing</i></label>
+      <input type="checkbox" id="Task3" name="Coloring" value="Coloring" />
+      <label for="Task3"><i style="text-align: left;">Coloring</i></label
+      ><br />
+      <label>pick an appointment</label><br />
+      <input type="datetime-local" />
+      <select name="place of appointment"
+        ><br />
+        <option>Sousse</option>
+        <option>Tunis</option>
+        <option>Tozeur</option>
+      </select>
+      <input type="submit" value="submit" />
+      <input type="reset" />
+    </form>
+    <footer>
+      <h4>About</h4>
+        <p style="color:rgb(15, 10, 4)">Recreational has been founded in <i>2016</i> by a group of underground artists who
+            wanted to make <i>"Art for the Sake of Art"</i> </p>
+    </footer>
+  </body>
 </html>
